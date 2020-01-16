@@ -66,20 +66,28 @@
                     <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#profil">Profil</a>
+                    <a class="nav-link page-scroll" href="#services">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#anfrage">Anfrage</a>
+                    <a class="nav-link page-scroll" href="#pricing">Know-How</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#request">Leistungen</a>
                 </li>
 
                 <!-- Dropdown Menu -->          
-                <li class="nav-item ">
-                    <a class="nav-link page-scroll" href="#team">Unser Team</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Terms Conditions</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Privacy Policy</span></a>
+                    </div>
                 </li>
                 <!-- end of dropdown menu -->
 
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#kontakt">Kontakt</a>
+                    <a class="nav-link page-scroll" href="#contact">Contact</a>
                 </li>
             </ul>
             <span class="nav-item social-icons">
@@ -124,8 +132,67 @@
     </header> <!-- end of header -->
     <!-- end of header -->
 
-    <!-- Profil -->
-    <div id="profil" class="cards-1">
+
+    <!-- Customers -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5>Trusted By</h5>
+                    
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/logowebktap.png" alt="alternative" style="width: 125px;">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-1.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-2.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-3.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-4.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-5.png" alt="alternative">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="image-container">
+                                        <img class="img-responsive" src="images/customer-logo-6.png" alt="alternative">
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-wrapper -->
+                        </div> <!-- end of swiper container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of customers -->
+
+
+    <!-- Services -->
+    <div id="services" class="cards-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -170,7 +237,7 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of cards-1 -->
-    <!-- end of profil -->
+    <!-- end of services -->
 
 
     <!-- Details 1 -->
@@ -317,15 +384,14 @@
     <!-- end of details lightbox 2 -->
     <!-- end of details lightboxes -->
 
-    <!-- Anfrage -->
-    <div id="anfrage" class="form-1">
+    <!-- Request -->
+    <div id="request" class="form-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Formular ausfüllen für Meetinganfragen</h2>
-                        <p>Als Beratungsunternehmen begleiten wir unsere Kunden im gesamten Software Lebenszyklus. Von der Beratung, Konzeption, technische Umsetzung bis hin zur Betriebseinführung. Business Intelligence umfasst ein breites Spektrum an Technologien und Anwendungen:
-                            Data Warehouse, Data Mining, Analytische Auswertungen. </p>
+                        <h2>Fill The Following Form To Request A Meeting</h2>
+                        <p>Evolo is one of the easiest and feature packed marketing automation apps in the market. Discover what it can do for your business organization right away.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-check"></i>
@@ -353,7 +419,7 @@
                         <form id="requestForm" data-toggle="validator" data-focus="false">
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="rname" name="rname" required>
-                                <label class="label-control" for="rname">Voller Name</label>
+                                <label class="label-control" for="rname">Full name</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
@@ -363,24 +429,24 @@
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="rphone" name="rphone" required>
-                                <label class="label-control" for="rphone">Telefon</label>
+                                <label class="label-control" for="rphone">Phone</label>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
                                 <select class="form-control-select" id="rselect" required>
-                                    <option class="select-option" value="" disabled selected>Sie wünschen ...</option>
-                                    <option class="select-option" value="Personal Loan">Informationssysteme</option>
-                                    <option class="select-option" value="Car Loan">Reportinglösungen</option>
-                                    <option class="select-option" value="House Loan">Beratung</option>
+                                    <option class="select-option" value="" disabled selected>Interested in...</option>
+                                    <option class="select-option" value="Personal Loan">Starter</option>
+                                    <option class="select-option" value="Car Loan">Medium</option>
+                                    <option class="select-option" value="House Loan">Complete</option>
                                 </select>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group checkbox">
-                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>Ich akzeptiere die von BI-Logix angegebenen <a href="privacy-policy.html">Datenschutz Bestimmung</a> und <a href="terms-conditions.html">Geschäftsbedingungen</a>
+                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I agree with Evolo's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a>
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">ANFRAGEN</button>
+                                <button type="submit" class="form-control-submit-button">REQUEST</button>
                             </div>
                             <div class="form-message">
                                 <div id="rmsgSubmit" class="h3 text-center hidden"></div>
@@ -393,10 +459,114 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of form-1 -->
-    <!-- end of Anfrage -->
+    <!-- end of request -->
 
-    <!-- Team -->
-    <div id="team" class="basic-4">
+
+    <!-- Video -->
+    <div class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Check Out The Video</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Video Preview -->
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+                                <img class="img-fluid" src="images/video-frame.svg" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> <!-- end of video-wrapper -->
+                    </div> <!-- end of image-container -->
+                    <!-- end of video preview -->
+
+                    <p>This video will show you a case study for one of our <strong>Major Customers</strong> and will help you understand why your startup needs Evolo in this highly competitive market</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of video -->
+
+
+    <!-- Testimonials -->
+    <div class="slider-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/testimonials-2-men-talking.svg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <h2>Testimonials</h2>
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-1.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">I just finished my trial period and was so amazed with the support and results that I purchased Evolo right away at the special price.</p>
+                                            <p class="testimonial-author">Jude Thorn - Designer</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-2.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Evolo has always helped or startup to position itself in the highly competitive market of mobile applications. You will not regret using it!</p>
+                                            <p class="testimonial-author">Marsha Singer - Developer</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/testimonial-3.svg" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">Love their services and was so amazed with the support and results that I purchased Evolo for two years in a row. They are awesome.</p>
+                                            <p class="testimonial-author">Roy Smith - Marketer</p>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                               
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-2 -->
+    <!-- end of testimonials -->
+
+
+    <!-- About -->
+    <div id="about" class="basic-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -507,17 +677,18 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-4 -->
-    <!-- end of Team -->
+    <!-- end of about -->
+
 
     <!-- Contact -->
-    <div id="kontakt" class="form-2">
+    <div id="contact" class="form-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h2>Kontakt</h2>
                     <ul class="list-unstyled li-space-lg">
                         <li class="address">Rufen Sie uns an oder senden Sie uns eine Nachricht über das Kontaktformular</li>
-                        <li><i class="fas fa-map-marker-alt"></i>Otto-Surges-Str. 40, 51107 Köln</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Alpenroder Weg 2E, 50767 Köln</li>
                         <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:004917697921082">+49 (176) 97921082</a></li>
                         <li><i class="fas fa-envelope"></i><a class="turquoise" href="mailto:info@bi-logix.de">info@bi-logix.de</a></li>
                     </ul>
@@ -545,15 +716,15 @@
                         </div>
                         <div class="form-group">
                             <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Ihr Anliegen</label>
+                            <label class="label-control" for="cmessage">Your message</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>Ich akzeptiere die <a href="privacy-policy.html">Datenschutzbestimmung</a> und <a href="terms-conditions.html">Geschäftsbedingungen</a>. 
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree with Evolo's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Senden</button>
+                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
@@ -579,7 +750,18 @@
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
-                    <div class="footer-col middle">   
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Our business partners <a class="turquoise" href="#your-link">startupguide.com</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms & Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy Policy</a></div>
+                            </li>
+                        </ul>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
