@@ -552,6 +552,11 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+@media (min-width: 320px) {
+  .navbar-custom .navbar-brand.logo-image img {
+    width: 8em;
+}
+}
 
 @media (min-width: 576px) {
   .container {
@@ -3085,6 +3090,7 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 576px) {
+
   .dropdown-menu-sm-left {
     right: auto;
     left: 0;
@@ -5907,6 +5913,9 @@ a.close.disabled {
 }
 
 @media (min-width: 576px) {
+  h1{
+    size: 10px;
+  }
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;

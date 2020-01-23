@@ -161,7 +161,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             rformError();
-            rsubmitMSG(false, "Please fill all fields!");
+            rsubmitMSG(false, "Bitte alle Felder ausfüllen!");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -219,7 +219,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             cformError();
-            csubmitMSG(false, "Please fill all fields!");
+            csubmitMSG(false, "Bitte alle Felder ausfüllen!");
         } else {
             // everything looks good!
             event.preventDefault();
